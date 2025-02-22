@@ -46,6 +46,7 @@ Input Parameters:
 n (int): The size of the square (number of rows and columns).
 
 
+
 Output:
 
 A list of strings where each string is a row of n characters, representing a hollow square.
@@ -181,3 +182,59 @@ def generate_inverted_triangle(n):
     return triangle
 
 print(generate_inverted_triangle(3))
+
+
+def sum_list(numbers):
+    
+    sum = 0
+    
+    for num in numbers:
+        sum += num
+    # Your code goes here
+    return sum 
+
+
+def find_largest(numbers):
+    
+    return max(numbers)
+    # Your code goes here
+
+
+def remove_duplicates(lst):
+    
+    new_num = []
+    
+    for num in lst:
+        if num not in new_num:
+            
+            new_num.append(num)
+    return new_num
+        
+    # Your code goes here
+    pass
+
+def check_unique(lst):
+    
+    seen = set()  # To track seen elements
+    for num in lst:
+        if num in seen:  # If the element is already in the set, it's a duplicate
+            return False
+        seen.add(num)  # Add the element to the set
+    return True
+
+def reverse_list(lst):
+    # Your code goes here
+    return list(reversed(lst))
+
+
+def count_even_odd(lst):
+    
+    count_even = 0
+    count_odd = 0
+    
+    for num in lst:
+        if num % 2 == 0:
+            count_even += 1
+        else:
+            count_odd += 1 
+    return (count_even , count_odd)
