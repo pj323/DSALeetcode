@@ -238,3 +238,20 @@ def count_even_odd(lst):
         else:
             count_odd += 1 
     return (count_even , count_odd)
+
+
+def max_consecutive_difference(lst):
+
+    max_diff = 0  
+
+
+    
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):
+            diff = abs(lst[i] - lst[j]) 
+            if diff > max_diff:
+                
+                max_diff = diff
+
+    return max_diff
+
